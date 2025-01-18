@@ -6,9 +6,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0039-combination-sum](https://github.com/sahilsheshank/leetcode_practice/tree/master/0039-combination-sum) |
 | [0216-combination-sum-iii](https://github.com/sahilsheshank/leetcode_practice/tree/master/0216-combination-sum-iii) |
 ## Backtracking
 |  |
 | ------- |
+| [0039-combination-sum](https://github.com/sahilsheshank/leetcode_practice/tree/master/0039-combination-sum) |
 | [0216-combination-sum-iii](https://github.com/sahilsheshank/leetcode_practice/tree/master/0216-combination-sum-iii) |
 <!---LeetCode Topics End-->
