@@ -9,15 +9,13 @@ using namespace std;
 class Solution {
   public:
     vector<int> removeDuplicate(vector<int>& arr) {
-        unordered_map<int,int>mpp;
-        for(auto it:arr){
-            mpp[it]++;
-        }
+        unordered_map<int,bool>mpp;
+        
         vector<int>ans;
         for(int i=0;i<arr.size();i++){
-            if(mpp.count(arr[i])){
+            if(!mpp.count(arr[i])){
                 ans.push_back(arr[i]);
-                mpp.erase(arr[i]);
+                mpp[arr[i]]=true;
                 
             }
             else continue;
