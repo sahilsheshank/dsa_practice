@@ -8,26 +8,30 @@ using namespace std;
 
 class Solution {
   public:
-    int neg(vector<int>& arr,int l,int r){
-        int i=l;
-        int j=r;
-        for(int p=i;p<=j;p++){
-            if(arr[p]<0){
-                return arr[p];
-            }
-        }
-        return 0;
-    }
+    // int neg(vector<int>& arr,int l,int r){
+    //     int i=l;
+    //     int j=r;
+    //     for(int p=i;p<=j;p++){
+    //         if(arr[p]<0){
+    //             return arr[p];
+    //         }
+    //     }
+    //     return 0;
+    // }
     vector<int> FirstNegativeInteger(vector<int>& arr, int k) {
         vector<int>ans;
-        
+        queue<int>q;
         int l=0;
         int r=0;
 
         while(r<arr.size()){
-            
+            if(arr[r]<0) q.push(arr[r]);
             if(r-l+1==k){
-                ans.push_back(neg(arr,l,r));
+                if(!q.empty()) ans.push_back(q.front());
+                else ans.push_back(0);
+                if(arr[l]<0){
+                    q.pop();
+                }
                 l++;
             }
             
