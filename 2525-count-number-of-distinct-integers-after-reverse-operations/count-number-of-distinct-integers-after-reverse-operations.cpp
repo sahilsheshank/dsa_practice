@@ -10,7 +10,7 @@ public:
         return ans;
     }
     int countDistinctIntegers(vector<int>& nums) {
-        set<int>st;
+        unordered_set<int>st;
         for(int i=0;i<nums.size();i++){
             int rev=reverseNum(nums[i]);
             st.insert(nums[i]);
